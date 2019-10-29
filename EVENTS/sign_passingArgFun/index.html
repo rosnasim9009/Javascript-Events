@@ -1,0 +1,54 @@
+<html>
+<!--start head-->
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Sign in</title>
+</head>
+<!--end head-->
+
+<body>
+  <div class="main">
+
+    <!--Form Begins-->
+    <form action="http://google.co.in" method="get">
+      <p class="sign" align="center">Sign in</p>
+      <input id="user" type="text" class="user" name="user" required="required" align="center" placeholder="Username"/><br>
+      <div id="msg"></div>
+      <input id="pwd" type="password" class="pass" name="pwd" required="required" align="center" placeholder="Password"/><br>
+      <input type="submit" class="submit" value="Submit" onclick="validate()"/>
+      <p class="forgot" align="center"><a href="http://google.co.in">Forgot Password?</a></p>
+    </form>
+    <!--End of Form-->
+    <!--script>
+
+      function validate()   //validating username and password
+      {
+          var un = document.getElementById("user").value;
+          var pw = document.getElementById("pwd").value;
+          var valid = -1;
+
+          var unArray = ["rosna", "simon", "richu", "linda"];
+          var pwArray = ["1234", "1111", "2222", "3333"];
+
+          for (var i=0; i <unArray.length; i++) {
+              if ((un == unArray[i]) && (pw == pwArray[i])) {
+                  valid = i;
+                  break;
+              }
+          }
+          if (valid != -1) {
+              alert ("Login was successful");
+          }
+          else {
+              alert("Invalid Username and/or Password! Please try again.")
+              document.getElementById("pwd").value = "";
+              document.getElementById("user").value = "";
+          }
+      }
+      </script-->
+      <script  type="text/javascript" src="username.js"></script>
+  </div>
+</body>
+</html>

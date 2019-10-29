@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 5: Document Object Model - Get Elements By Class Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">List</h1>
+      <h2>Buy groceries</h2>
+      <ul id="myList">
+        <li id="one" class="hot" onclick="remove(this.id)"><em>Fresh</em> figs</li>
+        <li id="two" class="hot" onclick="remove(this.id)">Pine nuts</li>
+        <li id="three" class="hot" onclick="remove(this.id)">Honey</li>
+        <li id="four" class="hot" onclick="remove(this.id)">Balsamic vinegar</li>
+      </ul>
+    </div>
+    <script src="remove.js"></script>
+  </body>
+</html>
