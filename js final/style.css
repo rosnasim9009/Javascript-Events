@@ -1,0 +1,21 @@
+img{
+  width: 70%;
+}
+.name{
+  top: 2em;
+}
+#yes1{
+  display: none;
+}
+#no1{
+  display: none;
+}
+#yes2{
+  display: none;
+}
+#no2{
+  display: none;
+}
+#consent{
+  display: none;
+}

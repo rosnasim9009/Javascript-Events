@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8beab4484a.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="" action="https://letterboxd.com" method="get">
+      <div style="border:1px;top:3em;left:1em;">
+      <div class="row">
+          <div class="col-sm-4">
+            <img src="im3.jpg" alt="">
+            <h1>Become a Member</h1>
+            <p>Welcome to the Super 8 Film Society. We are a group of film enthusiasts who meet up each month
+              to watch old movies on film, in our own private cinema. We also create our own short film each year,
+              which is entered into film competitions worldwide.</p>
+          </div>
+          <div class="col-sm-4">
+            <h2>Settings</h2>
+
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" placeholder="Enter your name"><br>
+              <div id="n">
+              </div><br>
+
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" placeholder="you@example.com" onblur="emailCheck()"><br>
+              <div id="e"></div><br>
+
+              <label for="pwd">New Password:</label><br>
+              <input type="password" id="pwd" >
+              <i class="fas fa-check" id="yes1"></i><i class="far fa-times-circle" id="no1"></i>
+              <div id="p">
+              </div><br>
+
+              <label for="cp">Confirm Password:</label><br>
+              <input type="password" id="cpwd" onkeyup="check()">
+              <i class="fas fa-check" id="yes2"></i><i class="far fa-times-circle" id="no2"></i>
+              <div id="cp">
+              </div><br>
+          </div>
+          <div class="col-sm-4">
+            <h2>Profile</h2>
+            <label for="dob">Birthday:</label><br>
+            <input type="date" id="date" placeholder="yyyy-mm-dd" onblur="dobCheck()"><br>
+            <div id="d"></div><br>
+
+            <div id="consent">
+              <label for="consent">You need your parent's permission to join.
+                Tick here if your child can join:</label>
+              <input type="checkbox" name="consent" id="parents-consent"><br>
+            </div>
+
+            <label for="bio">Short Bio(Max 140 characters)</label><br>
+            <textarea name="bio" id="bio" rows="5" cols="30" onkeyup="biofn()"></textarea><br>
+            <div id="b"></div><br>
+            <div id="bcount">140</div>
+            <input type="submit" id="sub" value="Register" onclick="submitRegister()"><br>
+          </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="validation.js"></script>
+    <script type="text/javascript" src="password.js"></script>
+    <script type="text/javascript" src="email.js"></script>
+    <script type="text/javascript" src="bio.js"></script>
+  </body>
+</html>
